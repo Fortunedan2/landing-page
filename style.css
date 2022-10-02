@@ -112,9 +112,49 @@ li {
     color: #E5E7EB;
 }
 
-.information {
+.content {
     display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #FFD700;*/
+    
 }
+
+.images {
+    box-sizing: border-box;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-grow: ;
+    border-radius: 50px;
+
+}
+.products {
+   border: 2px solid lightskyblue;
+   border-radius: 50px;
+}
+
+.info-text {
+    margin: 16px;
+    flex-wrap: wrap;
+    
+}
+
+.info {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: ;
+    
+}
+
+
 .footer {
     padding: 0;
     margin: 0;
