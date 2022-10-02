@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+   
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px
+    
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+}
+.logo {
+    border-radius: 75px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a , ul , li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.background-img {
+    background-image: url("./image/Background-image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5));
+    height: 100vh;
+}
