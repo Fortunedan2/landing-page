@@ -112,6 +112,9 @@ li {
     color: #E5E7EB;
 }
 
+.information {
+    display: flex;
+}
 .footer {
     padding: 0;
     margin: 0;
