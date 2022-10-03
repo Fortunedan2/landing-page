@@ -115,7 +115,7 @@ li {
 .content {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 40px;
     margin: 0;
     justify-content: center;
     align-items: center;
@@ -130,13 +130,20 @@ li {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    flex-grow: ;
+    flex-shrink: 1;
     border-radius: 50px;
 
 }
 .products {
    border: 2px solid lightskyblue;
    border-radius: 50px;
+}
+
+.content-text {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+    font-size: 30px;
 }
 
 .info-text {
@@ -154,14 +161,74 @@ li {
     
 }
 
+.quote {
+    display: flex;
+    padding: 32px 16px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.quote > p {
+    font-style: italic;
+    text-align: ;
+    flex: 0 0 500px;
+    padding-left: 8px;
+}
+
+.testimonial-img {
+    border-radius: 50px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3882F6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 700px;
+    padding: 30px 40px;
+}
+
+.cta-btn {
+    border: 1px solid #E5E7EB;
+    padding: 4px 10px;
+    background: #3882F6;
+    color: #E5E7EB;
+    outline: none;
+    font-weight: 700;
+    border-radius: 10px;
+    width: max-content;
+    font-size: 16px;
+    
+}
+
+.cta-text {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
 
 .footer {
-    padding: 0;
+    text-align: center;
+    padding: 30px;
     margin: 0;
     background-color:#1F2937; 
     color: #E5E7EB;
 }
 
-.quote > p {
-    font-style: italic;
-}
