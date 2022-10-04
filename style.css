@@ -58,6 +58,12 @@ ul {
 .hero-img {
     margin-right:45px;
 }
+
+.trans-img {
+    width: 10vh;
+    border-radius: 50px;
+}
+
 .header {
     background-color: #1F2937;
     padding-top: 16px;
@@ -73,7 +79,7 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
     color: #F9FAF8;
     margin-bottom: 8px;
@@ -112,6 +118,19 @@ li {
     color: #E5E7EB;
 }
 
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: white;
+    transition: all .5s
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -148,7 +167,6 @@ li {
 
 .info-text {
     margin: 16px;
-    flex-wrap: wrap;
     
 }
 
@@ -157,22 +175,23 @@ li {
     text-align: center;
     justify-content: space-around;
     align-items: center;
-    background-color: ;
+    background-color: lightcyan;
+    border-radius: 50px;
     
 }
 
 .quote {
-    display: flex;
     padding: 32px 16px;
     background-color: grey;
-    align-items: center;
+}
+
+.testimonial-text {
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 .quote > p {
     font-style: italic;
-    text-align: ;
-    flex: 0 0 500px;
     padding-left: 8px;
 }
 
@@ -180,12 +199,20 @@ li {
     border-radius: 50px;
 }
 
+.testimonial {
+    margin-left: 20px;
+    font-size: 500;
+    
+}
+
 .name {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    width: 100px;
+    margin-left: 50em;
 }
+
 
 .action {
     display: flex;
@@ -208,9 +235,8 @@ li {
 .cta-btn {
     border: 1px solid #E5E7EB;
     padding: 4px 10px;
-    background: #3882F6;
+    /* background: #3882F6; */
     color: #E5E7EB;
-    outline: none;
     font-weight: 700;
     border-radius: 10px;
     width: max-content;
@@ -231,4 +257,3 @@ li {
     background-color:#1F2937; 
     color: #E5E7EB;
 }
-
